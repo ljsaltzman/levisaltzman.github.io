@@ -8,52 +8,43 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="container">
-    <!-- Left Sidebar -->
-    <aside class="sidebar sidebar-left">
-      <h1 class="sidebar-name">Levi Saltzman</h1>
-      <p class="sidebar-bio">Research analyst at the Global Poverty Research Lab. Before that, Economics and Global History at Northwestern University. Interested in the application of quantitative methods to human development.</p>
-
-      <nav class="sidebar-nav">
-        <a href="#projects">Projects</a>
+  <header>
+    <div class="header-inner">
+      <nav>
         <a href="#essays">Essays</a>
+        <a href="#projects">Projects</a>
       </nav>
-    </aside>
+    </div>
+  </header>
 
-    <!-- Center Main -->
-    <main class="main">
-      <section id="projects">
-        <h2>Projects</h2>
-        <div class="tile-grid" id="projects-grid">
-          <!-- populated by main.js -->
-        </div>
-      </section>
-    </main>
-
-    <!-- Right Sidebar -->
-    <aside class="sidebar sidebar-right">
-      <section id="essays">
-        <h2>Essays</h2>
-        <div class="essay-list" id="essays-grid">
-          <!-- populated by main.js -->
-        </div>
-      </section>
-
-      <div class="sidebar-cv">
-        <div class="sidebar-section-label">CV</div>
-        <a href="Levi Saltzman_Resume.pdf" target="_blank" rel="noopener">
-          <i class="fas fa-file"></i> Download
-        </a>
+  <main>
+    <section class="hero">
+      <h1 class="hero-name">Levi Saltzman</h1>
+      <p class="tagline">Research analyst at the Global Poverty Research Lab. Before that, Economics and Global History at Northwestern University. Interested in the application of quantitative methods to human development.</p>
+      <div class="hero-links">
+        <a href="https://github.com/Saltzman-McGeever" target="_blank" rel="noopener"><i class="fab fa-github"></i> GitHub</a>
+        <a href="https://www.linkedin.com/in/levi-saltzman/" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        <a href="mailto:levisaltzman@gmail.com"><i class="fas fa-envelope"></i> Email</a>
+        <a href="Levi Saltzman_Resume.pdf" target="_blank" rel="noopener"><i class="fas fa-file"></i> CV</a>
       </div>
-    </aside>
-  </div>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="tile-grid" id="projects-grid">
+        <!-- populated by main.js -->
+      </div>
+    </section>
+
+    <section id="essays">
+      <h2>Essays</h2>
+      <div class="tile-grid" id="essays-grid">
+        <!-- populated by main.js -->
+      </div>
+    </section>
+  </main>
 
   <footer>
-    <div class="footer-links">
-      <a href="https://github.com/Saltzman-McGeever" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
-      <a href="https://www.linkedin.com/in/levi-saltzman/" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a>
-      <a href="mailto:levisaltzman@gmail.com"><i class="fas fa-envelope"></i></a>
-    </div>
     <p>&copy; <span id="year"></span> Levi Saltzman</p>
   </footer>
 
