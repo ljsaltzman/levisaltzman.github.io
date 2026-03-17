@@ -8,45 +8,76 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <div class="header-inner">
-      <nav>
-        <a href="#essays">Essays</a>
-        <a href="#projects">Projects</a>
-      </nav>
-    </div>
-  </header>
-
-  <main>
-    <section class="hero">
-      <h1 class="hero-name">Levi Saltzman</h1>
-      <p class="tagline">Research analyst at the Global Poverty Research Lab. Before that, Economics and Global History at Northwestern University. Interested in the application of quantitative methods to human development.</p>
-      <div class="hero-links">
-        <a href="https://github.com/Saltzman-McGeever" target="_blank" rel="noopener"><i class="fab fa-github"></i> GitHub</a>
-        <a href="https://www.linkedin.com/in/levi-saltzman/" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i> LinkedIn</a>
-        <a href="mailto:levisaltzman@gmail.com"><i class="fas fa-envelope"></i> Email</a>
-        <a href="Levi Saltzman_Resume.pdf" target="_blank" rel="noopener"><i class="fas fa-file"></i> CV</a>
+  <div class="layout">
+    <!-- Left Column: Header & Links -->
+    <aside class="column column-left">
+      <div class="header-section">
+        <h1 class="site-name">Levi Saltzman</h1>
+        <nav class="main-nav">
+          <a href="https://github.com/Saltzman-McGeever" target="_blank" rel="noopener">
+            <i class="fab fa-github"></i> GitHub
+          </a>
+          <a href="https://www.linkedin.com/in/levi-saltzman/" target="_blank" rel="noopener">
+            <i class="fab fa-linkedin"></i> LinkedIn
+          </a>
+          <a href="mailto:levisaltzman@gmail.com">
+            <i class="fas fa-envelope"></i> Email
+          </a>
+          <a href="Levi Saltzman_Resume.pdf" target="_blank" rel="noopener">
+            <i class="fas fa-file"></i> Resume
+          </a>
+        </nav>
       </div>
-    </section>
+    </aside>
 
-    <section id="projects">
-      <h2>Projects</h2>
-      <div class="tile-grid" id="projects-grid">
-        <!-- populated by main.js -->
-      </div>
-    </section>
+    <!-- Middle Column: Projects -->
+    <main class="column column-middle">
+      <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects-list" id="projects-grid">
+          <!-- populated by main.js -->
+        </div>
+      </section>
+    </main>
 
-    <section id="essays">
-      <h2>Essays</h2>
-      <div class="tile-grid" id="essays-grid">
-        <!-- populated by main.js -->
-      </div>
-    </section>
-  </main>
+    <!-- Right Column: CV Info -->
+    <aside class="column column-right">
+      <section class="cv-section">
+        <h2>Education</h2>
+        <div class="cv-item">
+          <div class="cv-title">Northwestern University</div>
+          <div class="cv-subtitle">B.A. Economics & Global History</div>
+          <div class="cv-meta">GPA: 3.85 / 4.00 | <em>Phi Beta Kappa</em></div>
+        </div>
+      </section>
 
-  <footer>
-    <p>&copy; <span id="year"></span> Levi Saltzman</p>
-  </footer>
+      <section class="cv-section">
+        <h2>Current</h2>
+        <div class="cv-item">
+          <div class="cv-title">Research Analyst</div>
+          <div class="cv-subtitle">Global Poverty Research Lab</div>
+          <div class="cv-meta">New York, NY</div>
+          <ul class="cv-details">
+            <li>Bayesian meta-analysis of cash transfer programs</li>
+            <li>Econometric analyses for policy research</li>
+            <li>Research deliverables for Gates Foundation</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="cv-section">
+        <h2>Skills</h2>
+        <div class="cv-item">
+          <div class="cv-subtitle">Programming</div>
+          <div class="cv-meta">R, Python, SQL, Stata, Git, Jupyter</div>
+        </div>
+        <div class="cv-item">
+          <div class="cv-subtitle">Languages</div>
+          <div class="cv-meta">Professional Spanish</div>
+        </div>
+      </section>
+    </aside>
+  </div>
 
   <script src="data.js"></script>
   <script src="main.js"></script>
