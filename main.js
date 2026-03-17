@@ -18,13 +18,31 @@ function tileHTML(item, type) {
   `;
 }
 
-function render(items, type, gridId) {
-  const grid = document.getElementById(gridId);
+function essayItemHTML(item) {
+  const url = `post.html?type=essay&id=${item.id}`;
+  return `
+    <a class="essay-item" href="${url}">
+      <div class="essay-title">${item.title}</div>
+      <div class="essay-date">${item.date}</div>
+      <div class="essay-blurb">${item.blurb}</div>
+    </a>
+  `;
+}
+
+function renderProjects(items) {
+  const grid = document.getElementById("projects-grid");
   grid.innerHTML = items.length
-    ? items.map(item => tileHTML(item, type)).join("")
+    ? items.map(item => tileHTML(item, "project")).join("")
+    : `<p class="tile-empty">Nothing here yet.</p>`;
+}
+
+function renderEssays(items) {
+  const grid = document.getElementById("essays-grid");
+  grid.innerHTML = items.length
+    ? items.map(item => essayItemHTML(item)).join("")
     : `<p class="tile-empty">Nothing here yet.</p>`;
 }
 
 document.getElementById("year").textContent = new Date().getFullYear();
-render(essays, "essay", "essays-grid");
-render(projects, "project", "projects-grid");
+renderProjects(projects);
+renderEssays(essays);
