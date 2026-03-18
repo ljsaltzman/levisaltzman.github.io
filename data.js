@@ -34,4 +34,11 @@ const projects = [
     repoUrl: "https://github.com/Saltzman-McGeever/china-dev",
     content: "projects/china-dev.html",
   },
+  {
+    id: "modular",
+    title: "Modular",
+    blurb: "Organizational sticky notes app for macOS.",
+    tags: ["Swift", "macOS"],
+    repoUrl: "https://github.com/ljsaltzman/Modular",
+  },
 ];
