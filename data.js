@@ -16,13 +16,6 @@ function imgFallback(el, id) {
 }
 
 const essays = [
-  {
-    id: "example-essay",
-    title: "Example Essay Title",
-    blurb: "A one or two sentence description of what this essay is about.",
-    date: "Mar 2026",
-    content: "essays/example-essay.html",
-  },
 ];
 
 const projects = [
@@ -40,5 +33,11 @@ const projects = [
     blurb: "Organizational sticky notes app for macOS.",
     tags: ["Swift", "macOS"],
     repoUrl: "https://github.com/ljsaltzman/Modular",
+  },
+  {
+    id: "gamestate",
+    title: "gamestate",
+    blurb: "Typescript/HTML engine to visualize any stats-era MLB game",
+    tags: ["TypeScript", "HTML"],
   },
 ];

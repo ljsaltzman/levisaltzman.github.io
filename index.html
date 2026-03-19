@@ -30,12 +30,24 @@
         </nav>
       </div>
 
-      <section id="projects">
-        <h2>Projects</h2>
-        <div class="projects-list" id="projects-grid">
-          <!-- populated by main.js -->
-        </div>
-      </section>
+      <div class="content-tabs">
+        <nav class="tab-bar">
+          <button class="tab-btn active" data-tab="projects">Projects</button>
+          <button class="tab-btn" data-tab="essays">Essays</button>
+        </nav>
+
+        <section id="projects">
+          <div class="projects-list" id="projects-grid">
+            <!-- populated by main.js -->
+          </div>
+        </section>
+
+        <section id="essays" hidden>
+          <div class="essays-list" id="essays-list">
+            <!-- populated by main.js -->
+          </div>
+        </section>
+      </div>
     </main>
 
     <!-- Right Column: CV Info -->
@@ -70,9 +82,9 @@
           <div class="cv-subtitle">Buffett Institute for Global Affairs</div>
           <div class="cv-meta">Mondragón, Spain · May–Sep 2023</div>
           <ul class="cv-details">
-            <li>Secured $4,800 in funding for archival and ethnographic research in the Spanish Basque Country</li>
-            <li>600+ hours of research on the Mondragon Corporation and its social and economic policy implications</li>
-            <li>Field interviews with 40+ executives, managers, and contract laborers</li>
+            <li>$4,800 in competitive research funding</li>
+            <li>600+ hours of archival and ethnographic work</li>
+            <li>Interviews with 40+ executives and workers</li>
           </ul>
         </div>
       </section>

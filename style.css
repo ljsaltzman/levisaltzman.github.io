@@ -63,36 +63,42 @@ a:hover {
 
 /* ── Left Column: Header ── */
 .header-section {
+  padding: 2rem 0 2rem;
   margin-bottom: 2rem;
+  border-bottom: 1px solid var(--border);
 }
 
 .site-name {
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 700;
-  margin-bottom: 0.5rem;
-  line-height: 1.2;
+  margin-bottom: 0.6rem;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
 }
 
 .site-blurb {
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   color: var(--muted);
-  line-height: 1.5;
-  margin-bottom: 1.5rem;
+  line-height: 1.6;
+  margin-bottom: 1.25rem;
+  max-width: 480px;
 }
 
 .main-nav {
   display: flex;
   flex-direction: row;
-  gap: 1.5rem;
+  gap: 1.25rem;
 }
 
 .main-nav a {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
+  font-weight: 500;
   color: var(--muted);
   display: flex;
   align-items: center;
-  gap: 0.5rem;
-  padding: 0.35rem 0;
+  gap: 0.4rem;
+  padding: 0.25rem 0;
+  letter-spacing: 0.02em;
 }
 
 .main-nav a:hover {
@@ -101,8 +107,9 @@ a:hover {
 }
 
 .main-nav i {
-  width: 16px;
+  width: 14px;
   text-align: center;
+  font-size: 0.85em;
 }
 
 /* ── Middle Column: Projects ── */
@@ -124,6 +131,53 @@ section h2 {
   margin-bottom: 1.5rem;
   padding-bottom: 0.5rem;
   border-bottom: 1px solid var(--border);
+}
+
+/* ── Tab bar ── */
+.content-tabs {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.tab-bar {
+  display: flex;
+  gap: 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.tab-btn {
+  appearance: none;
+  -webkit-appearance: none;
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -1px;
+  padding: 0.4rem 0;
+  margin-right: 1.5rem;
+  font-family: inherit;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+  cursor: pointer;
+}
+
+.tab-btn.active {
+  color: var(--text);
+  border-bottom-color: var(--text);
+}
+
+/* ── Essays List ── */
+.essays-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.essays-list:has(.project-item:only-child) {
+  grid-template-columns: 1fr;
 }
 
 /* ── Projects List ── */
@@ -409,24 +463,13 @@ footer {
     padding: 1.5rem;
   }
 
-  .column-right {
-    position: relative;
-    top: auto;
-    height: auto;
-    max-height: none;
-  }
-
   .column-middle {
     border-right: none;
-    border-bottom: 1px solid var(--border);
     padding-right: 0;
-    padding-bottom: 1.5rem;
-    margin-bottom: 1.5rem;
   }
 
   .column-right {
-    border-left: none;
-    padding-left: 0;
+    display: none;
   }
 }
 
